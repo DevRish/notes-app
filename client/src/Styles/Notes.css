@@ -1,0 +1,41 @@
+
+.addNote{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+    font-size: 2rem;
+}
+.fetchedNotes{
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+    grid-gap: 3rem;
+    margin-bottom: 2rem;
+}
+.fetchedNotes h3{
+    text-align: center;
+    font-family: Ubuntu, Sans Seriff;
+    font-size: 2rem;
+}
+
+/*Delete button*/
+.fetchedNotes button{
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    font-size: 2rem;
+    color: #636363;
+}
+.fetchedNotes button:hover{
+    color: black;
+}
+
+@media (max-width: 768px)
+{
+    .fetchedNotes{
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 3rem;
+        margin-bottom: 2rem;
+      }
+}

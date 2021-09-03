@@ -1,0 +1,33 @@
+
+.aboutUs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.aboutUs .image{
+    width: 25rem;
+    height: 25rem;
+    background: url('./../assets/notes_image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 1rem 0;
+}
+.aboutUs p{
+    font-size: 2rem;
+    padding: 1rem 10%;
+}
+.aboutUs .social{
+    display: flex;
+    align-items: center;
+    padding: 1rem 10%;
+    font-size: 2rem;
+}
+.social a{
+    text-decoration: none;
+    font-size: 4rem;
+    color: black;
+    margin-left: 5%;
+}

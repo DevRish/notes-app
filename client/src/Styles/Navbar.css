@@ -1,0 +1,79 @@
+
+nav{
+    box-shadow: 0rem 0.2rem 1rem #636363;
+    position: sticky;
+    z-index: 100;
+    background-color: white;
+}
+nav .container{
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+}
+nav h1{
+    color: black;
+    font-family: Rampart One, sans-serif;
+    font-size: 4rem;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    font-family: Ubuntu, Sans Seriff;
+    font-size: 2rem;
+    color: black;
+    margin: 0 3rem;
+}
+nav a:hover{
+    font-size: 2.3rem;
+}
+nav .btn{
+    margin: 0 3rem; /*This part diff*/
+}
+nav .btn:hover{
+    /*transform: scale(1.1);*/
+    font-size: 2.3rem;
+}
+nav .burger{
+    display: none;
+    font-size: 4rem;
+    position: absolute;
+    top: 3rem;
+    right: 4rem;
+    cursor: pointer;
+}
+@media (max-width: 768px)
+{
+    nav .container{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: white;
+    }
+    #show{
+      list-style: none;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #hide{
+        display: none;
+    }
+    nav .burger{
+      display: block;
+    }
+    nav h1{
+      margin-bottom: 2rem;
+    }
+    nav li{
+      display: flex;
+      justify-content: center;
+      padding: 2rem 0;
+      border-top: 2px solid #afafaf;
+      width: 100%;
+    }
+}

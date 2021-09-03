@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&family=Ubuntu:wght@300&display=swap');
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+    background-image: url('./assets/notes_bg.jpg');
+}
+html{
+  font-size: 62.5%;
+}
+h2{
+  background-color: black;
+  color: white;
+  font-family: Ubuntu, sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  width: 80%;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0.2rem 0.2rem 1rem #636363;
+}
+.outer{
+  width: 100%;
+  height: fit-content;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+  height: fit-content;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.inner{
+  background-color: white;
+  width: 80%;
+  border-radius: 1rem;
+  padding: 3rem;
+  font-family: Ubuntu, Sans Seriff;
+  box-shadow: 0.2rem 0.2rem 1rem #636363;
+}
+.btn{
+  background-color: black;
+  color: white;
+  font-family: Ubuntu, Sans Seriff;
+  font-size: 2rem;
+  border-radius: 0.7rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border: none;
+}
+form, #form{
+  display: grid;
+  grid-template-columns: 5fr 3fr 1fr;
+  grid-gap: 3rem;
+  font-family: Ubuntu, Sans Seriff;
+  font-size: 2rem;
+}
+form input, #form input{
+  border: none;
+  border-bottom: 0.2rem solid #8a8a8a;
+  width: 100%;
+}
+form input:focus, #form input:focus{
+  outline: none;
+}
+@media (max-width: 768px)
+{
+  html{
+    font-size: 55%;
+  }
+  .container{
+    width: 100%;
+    background: transparent;
+  }
+  .inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+  }
+  h2{
+    width: 90%;
+  }
+  form, #form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    /*border: 2px solid black;*/
+  }
+  form input, #form input{
+    width: 100%;
+    /*border: 2px solid black;*/
+  }
+}
+/*Custom Scrollbar*/
+::-webkit-scrollbar {
+  width: 1.5rem;
+}
+::-webkit-scrollbar-track {
+background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+background: #888; 
+border-radius: 0.8rem;
+}
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}
