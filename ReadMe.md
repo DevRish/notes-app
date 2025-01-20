@@ -1,3 +1,19 @@
-## A MERN Stack app that can be used to take or add notes
+# Notes-App
 
-This is my first MERN Stack project. Check it out: https://notesappdevrish.herokuapp.com/
+A CRUD app where a user can take notes
+
+![notes-app-screenshot](https://github.com/user-attachments/assets/a8e6e330-a008-44ab-bb33-bda59550f62d)
+
+## Features:
+
+- Fully responsive design
+- JWT based authentication
+- Single Page Application
+
+## Tech Stack:
+
+**Frontend:** ReactJS
+
+**Backend:** ExpressJS
+
+**Database:** MongoDB
